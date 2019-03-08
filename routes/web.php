@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users', 'UsersController@index');
+Route::get('/users', 'UsersController@index');
+
+Route::post('/users', 'UsersController@store');
+
+// Route::post('/users', function () {
+//     return view('UsersController@store');
+// });
